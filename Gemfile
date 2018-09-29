@@ -16,7 +16,7 @@ gem 'omniauth-github',              '~> 1.1.2' #for Github Authentication
 gem 'omniauth-google-oauth2',       '~> 0.5.1' #for Google Authentication
 gem 'font-awesome-rails',           '~> 4.7'
 gem 'bootstrap',                    '~> 4.0.0.alpha6'
-gem 'uglifier',                    '~> 3.0'
+gem 'uglifier',                     '~> 3.0'
 gem 'friendly_id',                  '~> 5.1'
 gem 'cancancan',                    '~> 1.15'
 gem 'sass-rails',                   '~> 5.0'
@@ -29,6 +29,7 @@ gem 'gibbon',                       '~> 3.2.0' # for Mailchimp
 gem 'nokogiri',                     '~> 1.8', '>= 1.8.4'
 gem 'sprockets',                    '~> 3.7.2'
 gem 'skylight'
+gem 'graphql',                      '~> 1.8.10'
 
 group :production do
   gem 'rails_12factor',             '~> 0.0.3'
@@ -62,4 +63,5 @@ group :development do
   gem 'derailed'                                     # Memory benchmarking
   gem 'reek'                                         # Code smell detector
   gem 'rubocop', require: false                      # Static code analyser
+  gem 'graphiql-rails',                    '~> 1.4', '>= 1.4.8'
 end
