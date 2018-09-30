@@ -1,28 +1,18 @@
 module Types
   class CourseType < Types::BaseObject
-    description "A TOP course"
+    description "A Course"
 
-    field :id, ID, null: true
+    field :id, ID, null: false
+    field :title, String, null: true
     field :description, String, null: true
     field :title_url, String, null: true
     field :position, Int, null: false
     field :slug, String, null: true
 
-    field :course, CourseType, null: true do
-      description "Find a course by ID"
-      argument :id, ID, required: true
-    end
+    field :sections, [SectionType], null: true,
+      description: "This course's sections"
 
-    def course(id:)
-      Course.find(id)
-    end
-
-    field :courses, [CourseType], null: true do
-      description "Find all courses"
-    end
-
-    def courses
-      Course.all
-    end
+    field :lessons, [LessonType], null: true,
+      description: "This course's lessons"
   end
 end
