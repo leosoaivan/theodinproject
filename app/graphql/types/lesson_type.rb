@@ -14,7 +14,7 @@ module Types
 
     field :course, CourseType, null: false,
       description: "The course this lesson belongs to"
-      
+
     field :section, SectionType, null: false,
       description: "The section this lesson belongs to"
   end
