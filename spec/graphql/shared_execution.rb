@@ -11,11 +11,13 @@ end
 RSpec.shared_context "shared execution", :shared_context => :metadata do
   let(:context)     { {} }
   let(:variables)   { {} }
+  let(:root_value)  { {} }
   let(:result)      {
     res = TheodinprojectSchema.execute(
       query_string,
       context: context,
-      variables: variables
+      variables: variables,
+      root_value: root_value
     )
     # Print any errors
     if res["errors"]

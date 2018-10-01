@@ -4,8 +4,53 @@ require 'graphql/shared_execution.rb'
 RSpec.describe Types::CourseType do
   include_context 'shared execution'
 
-  let(:course1) { Course.create(position: 1) }
-  let(:course2) { Course.create(position: 2) }
+  let!(:course1) { Course.create(position: 1) }
+  let!(:course2) { Course.create(position: 2) }
+
+  describe 'course(id:)' do
+    let(:query_string) {
+      %(
+        {
+          course(id: "#{course1.id}") {
+            id
+          }
+        }
+      )
+    }
+
+    it 'returns a course by ID' do
+      expect(result['data'].deep_symbolize_keys).to eq(
+        course: {
+          id: "#{course1.id}"
+        }
+      )
+    end
+  end      
+
+  describe 'courses' do
+    let(:query_string) {
+      %(
+        {
+          courses {
+            id
+          }
+        }
+      )
+    }
+
+    it 'returns all courses' do
+      expect(result['data'].deep_symbolize_keys).to eq(
+        courses: [
+          {
+            id: "#{course1.id}"
+          },
+          {
+            id: "#{course2.id}"
+          }
+        ]
+      )
+    end
+  end      
 
   describe 'sections' do
     let(:query_string) {
@@ -29,10 +74,10 @@ RSpec.describe Types::CourseType do
         course: {
           sections: [
             {
-              id: "#{section1.id}", position: section1.position
+              id: "#{section1.id}"
             },
             {
-              id: "#{section2.id}", position: section2.position
+              id: "#{section2.id}"
             }
           ]
         }
