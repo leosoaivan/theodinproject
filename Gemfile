@@ -45,7 +45,7 @@ group :development, :test do
   gem 'capybara-email',                    '~> 2.5'
   gem 'database_cleaner',                  '~> 1.5'
   gem 'webmock',                           '~> 2.1'
-  gem 'vcr',                               '~> 3.0'
+  gem 'vcr',                               '~> 5.0'
   gem 'shoulda-matchers',                  '~> 3.1'
   gem 'rake',                              '~> 11.3'
   gem 'rails-controller-testing',          '~> 1.0'
