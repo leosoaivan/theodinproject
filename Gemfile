@@ -13,7 +13,7 @@ gem 'premailer-rails',              '~> 1.9'
 gem 'github_api',                   '~> 0.14' # to pull in the curriculum files
 gem 'octokit',                      '~> 4.6'
 gem 'omniauth-github',              '~> 1.1.2' #for Github Authentication
-gem 'omniauth-google-oauth2',       '~> 0.5.1' #for Google Authentication
+gem 'omniauth-google-oauth2',       '~> 0.8.0' #for Google Authentication
 gem 'font-awesome-rails',           '~> 4.7'
 gem 'bootstrap',                    '~> 4.1.2'
 gem 'uglifier',                    '~> 3.0'
