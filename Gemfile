@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.5'
 
 gem 'rails',                        '~> 5.0.0'
-gem 'puma',                         '~> 3.11.2'
+gem 'puma',                         '~> 3.12.2'
 gem 'turbolinks'
 gem 'jquery-rails',                 '~> 4.2.1'
 gem 'devise',                       '~> 4.4.0' # Managing environment variables
