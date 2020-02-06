@@ -385,7 +385,7 @@ GEM
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
-    vcr (3.0.3)
+    vcr (5.1.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -462,7 +462,7 @@ DEPENDENCIES
   toastr-rails
   turbolinks
   uglifier (~> 3.0)
-  vcr (~> 3.0)
+  vcr (~> 5.1)
   web-console (~> 3.4)
   webmock (~> 2.1)
 
