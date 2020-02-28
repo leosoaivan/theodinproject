@@ -47,7 +47,7 @@ group :development, :test do
   gem 'webmock',                           '~> 2.1'
   gem 'vcr',                               '~> 3.0'
   gem 'shoulda-matchers',                  '~> 3.1'
-  gem 'rake',                              '~> 11.3'
+  gem 'rake',                              '~> 12.3'
   gem 'rails-controller-testing',          '~> 1.0'
   gem 'figaro',                            '1.1'
   gem 'bundle-audit'
