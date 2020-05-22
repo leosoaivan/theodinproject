@@ -261,7 +261,7 @@ GEM
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (3.0.3)
-    puma (3.11.4)
+    puma (3.12.6)
     rack (2.0.5)
     rack-attack (5.4.1)
       rack (>= 1.0, < 3)
@@ -444,7 +444,7 @@ DEPENDENCIES
   phantomjs (~> 2.1)
   poltergeist (~> 1.1)
   premailer-rails (~> 1.9)
-  puma (~> 3.11.2)
+  puma (~> 3.12.6)
   rack-attack
   rack-timeout (~> 0.4)
   rails (~> 5.0.0)
