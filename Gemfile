@@ -7,7 +7,7 @@ gem 'turbolinks'
 gem 'jquery-rails',                 '~> 4.2.1'
 gem 'devise',                       '~> 4.4.0' # Managing environment variables
 gem 'rack-timeout',                 '~> 0.4'
-gem 'kaminari',                     '~> 1.0', '>= 1.0.1'
+gem 'kaminari',                     '~> 1.2'
 gem 'pg',                           '~> 0.19'
 gem 'premailer-rails',              '~> 1.9'
 gem 'github_api',                   '~> 0.14' # to pull in the curriculum files
