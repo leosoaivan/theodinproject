@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: loofah
+    versions:
+    - 2.9.0
+  - dependency-name: reek
+    versions:
+    - 6.0.3
+  - dependency-name: omniauth-google-oauth2
+    versions:
+    - 0.8.1
+  - dependency-name: kramdown
+    versions:
+    - 2.3.0
